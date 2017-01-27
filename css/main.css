@@ -1,0 +1,74 @@
+
+body {
+  font-family: 'Nunito', sans-serif; 
+}
+
+.wrapper {
+  display: inline-block;
+  background-color: white;
+ 
+}
+video-container {
+ width: 640px;
+ height: 360px;
+}
+  video {
+    height: 100%;
+    width: 100%;
+  }
+
+img {
+background-color: transparent;
+}
+
+img, #sbar-container, #mute {
+  cursor: pointer;
+} 
+#play-pause {
+  padding-left: 10px;
+}
+
+#sbar-container {
+  position: relative;
+  z-index: 2;
+  
+  margin-top: -50px;
+  padding-bottom: 2px;
+  background-color: rgba(30, 30, 30, .3);
+
+}
+  #seek-bar {
+    height: 5px;
+    width: 0%;
+    background-color: orange;
+  }
+#video-controls {
+  position: relative;
+  z-index: 2;
+  height: 30px;
+  padding-top: 5px;
+}
+  #video-controls > * {
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+      
+  }
+  #time-field {
+    color: white;
+    line-height: 30px;
+    padding-left: 10px;
+
+  }
+  #mute,
+  #full-screen {
+    float: right;
+  padding-right: 10px;
+  }
+
+#captions-container {
+  padding: 10px;
+}
+ .current {
+  background-color: orange;
+} 
