@@ -17,16 +17,11 @@ When a user clicks any part of the transcript it should take them to the appropr
   let sbarContainer = document.getElementById("sbar-container");
   let timeField = document.getElementById("time-field");
 
- let videoContainer =  document.getElementById("video-container");
-  let videoControls = document.getElementById("video-controls");
- 
 
 window.addEventListener("load", function() {
   playButton.addEventListener("click", playOrPause, false);
   sbarContainer.addEventListener("click", skip, false);
   muteButton.addEventListener("click", muteOrUnmute, false);
-  videoControls.addEventListener("mouseover", mouseOver);
-  videoControls.addEventListener("mouseout", mouseOut);
   updatePlayer();
   
 }, false);
@@ -139,14 +134,3 @@ for (var i = 0; i < lines.length; i++) {
       }
     }
 });
-
-
-function mouseOver() {
-     videoControls.style.display = "inline";
-}
-
-function mouseOut() {
-      videoControls.style.display = "none";  
-}
-
-
